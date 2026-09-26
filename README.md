@@ -18,22 +18,34 @@ A C++ command-line tool that analyzes numeric data and tests whether it follows 
 
 ## How to Compile & Run
 
+Read from a file:
+
 ```bash
 g++ -std=c++20 NBStats.cpp -o nbstats
 ./nbstats sample-data.txt
 ```
 
-./nbstats
-# Type numbers, then Ctrl+Z (Windows) or Ctrl+D (Mac/Linux) to end
+Or read from the keyboard:
 
-Usage
+```bash
+./nbstats
+```
+
+Then type numbers and press Ctrl+Z (Windows) or Ctrl+D (Mac/Linux) to end input.
+
+## Usage
+
+```
 nbstats.exe [filename] [--skipbad] [--help]
 
   filename    - Optional file to read numbers from
   --skipbad   - Skip non-numeric input instead of terminating
   --help      - Display help message
+```
 
-Example Output
+## Example Output
+
+```
 Range: [5, 25]
 Mean: 12.417
 Median: 15.5
@@ -45,13 +57,9 @@ Digit  Expected%  Actual%   Bar
 -----  ---------  --------  ----------
   1      30.10%    14.29%   *******
   2      17.61%    28.57%   **************
-  ...
+```
 
- Author
-Oluwadarasimi Adufe
+## Author
 
- Course
-Computer Programming & Analysis (Co-op)
-Fanshawe College
-
-
+**Oluwadarasimi Adufe**  
+[GitHub](https://github.com/david332256)
